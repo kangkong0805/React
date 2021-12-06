@@ -1,0 +1,262 @@
+/*----------------- 로그인 메뉴 페이지 -----------------*/
+
+#first-display{
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    margin-top: 42vh;
+    top: 0;
+    left: 0;
+}
+
+#first-display img{
+    min-width: 450px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.loginitem{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 50vh;
+    gap: 50px;
+}
+
+/*--------------------로그인/회원가입 페이지--------------------*/
+.loginForm, .registerForm{
+    margin: auto;
+    margin-top: 5%;
+    width:350px;
+    height:500px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #F8F7F2;
+    text-align: center;
+}
+
+.title{
+    margin-bottom: 75px;
+}
+.idForm, .passForm , .nameForm{
+    border-bottom: 2px solid #B2B2B2;
+    margin-bottom: 10px;
+}
+.id, .pw, .name{
+    font-family: 'Godo';
+    font-size: 17.5px;
+    width:300px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #F8F7F2;
+    border:none;
+    outline:none;
+}
+
+.btn{
+    font-family: 'Godo';
+    font-weight: bold;
+    margin: auto;
+    margin:50px;
+    width:100px;
+    height:50px;
+    background-color: #F8F7F2;
+    border-style: none;
+    border: 2px solid #ac7659;
+    color: #ac7659;
+    border-radius: 10px;
+}
+
+/* 로그인 바 */
+.navbtn{
+    font-size: 18px;
+    font-weight: bold;
+    border-style: none;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    height: 40px;
+    background-color: #A879F3;
+    border-radius: 20px;
+    margin-top: 10px;
+    /* line-height: 22px; */
+    /* padding-top: 21.5px;
+    padding-bottom: 21.5px;
+    padding-left: 35px;
+    padding-right: 35px; */
+    
+}
+/* .navbtn:hover { background:#A879F3;} */
+.navbtn:active{filter: contrast(50%);} 
+
+/*--------------------------공통요소--------------------------*/
+
+/*배경*/
+.full_layer{            /* 회색 배경*/
+    position: fixed;
+    width: 100vw; 
+    min-height: 100vh;
+    min-width: 40vh;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.full_layer_findID{ 
+    position: fixed;
+    width: 100vw; 
+    min-height: 100vh;
+    min-width: 40vh;
+    text-align: center;
+    top: -167px;
+    left: -648.5px;
+}
+
+.full_layer_changePW{ 
+    position: fixed;
+    width: 100vw; 
+    min-height: 100vh;
+    min-width: 40vh;
+    text-align: center;
+    top: -166px;
+    left: -648.5px;
+}
+
+/*팝업창 틀*/
+.login_layer, .signup_layer{
+    background:#FFFFFF;
+    position: absolute;
+    padding-top: 70px;
+    margin:  auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    /* min-width: 400px; */
+    width: 623px;
+    height: 558px;
+    min-width: 300px;   
+    filter: contrast(100%); 
+}
+
+/*닫기 버튼*/
+.closepopup{ 
+    width: 50px;
+    height: 50px;
+    background-color: #c4c4c4;
+    border-radius: 25px;
+    border: 0;
+    right: 47px;
+    top: 44px;
+    position: fixed;
+}
+.X1, .X2{
+    position: absolute;
+    top: 24px;
+    right: 10.5px;
+    width: 29px;
+    height: 3px;
+    background: rgba(47, 41, 41, 0.8);
+}
+.X1{
+    transform: rotate(45deg);
+}
+.X2{
+    transform: rotate(135deg);
+}
+
+/*로고 이미지*/
+.popuplogo{
+    height: 11%;
+    margin-bottom: 43px;
+}
+
+/*------------------ 로그인 창 -------------------*/
+
+.full_layer input{
+    border: 1px solid #A879F3;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 300px;
+    font-size: 18px;
+    margin-bottom: 48px;
+    align-self: center;
+}
+.full_layer input::placeholder{
+    color: #2F2929;
+    opacity: 0.5;
+}
+
+.check{
+    font-size: 18px;
+    font-weight: bold;
+    border-style: none;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    height: 40px;
+    background-color: #A879F3;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.full_layer h3{
+    position: relative;
+    text-align: left;
+    margin-left: 160px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    /* font-weight: bolder; */
+    /* color: gray; */
+    /* opacity: 0.6; */
+}
+
+.login_layer p{
+    position: relative;
+    color: gray;
+    opacity: 0.6;
+    z-index: -1;
+    /* margin-top: 10px; */
+    /* font-size: 15px; */
+}
+
+.signup_layer{
+    width: 800px;
+    height: 720px;
+}
+.signup_layer h3{
+    margin-bottom: 10px;
+}
+
+.signup_layer input{
+    border: 1px solid #A879F3;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 480px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    align-self: center;
+}
+
+.sidebutton{
+    position: absolute;
+    right: 170px;
+    margin-top: -60px;
+    border: none;
+    border-radius: 100px;
+    width: 80px;
+    height: 30px;
+    background-color: #c4c4c4;
+}

@@ -1,0 +1,391 @@
+/*--------------------기본태그 초기화작업--------------------*/
+
+html,body,h1,h2,h3,ol,ul,li,img,form,button{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+li {
+    /* font-size: 18px; */
+    font-weight: bold;
+    /* float: left; */
+    display: list-item;
+}
+a:link{ color: black; text-decoration: none;}
+a:visited { color: black; text-decoration: none;}
+
+/*-------------------공통 기능-------------------*/
+main{
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 87.5vh;
+    padding: 0 10%;
+}
+header{
+    width: 100%;
+    height: 12.5vh;
+}
+aside{
+    /* position: relative; */
+    /* height: 80vh; */
+}
+.puppleline{
+    position: absolute;
+    height: 4px;
+    background: linear-gradient(90deg, #8252D0 22.76%, #8252D0 33.18%, #8252D0 33.18%, rgba(90, 228, 228, 0.778125) 53.96%, #43BF48 73.28%);
+    z-index: -1;
+}
+
+
+
+/*--------------------상단 네비게이션바--------------------*/
+.container{
+    position: fixed;
+    display: grid;
+    width: 100%;
+    height:12.5vh;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #B2B2B2;
+    z-index: 1;
+}
+
+
+.logoimg{
+    height: 50px;
+    margin-right: 30%;
+}
+
+.navul{
+    height: 12.5vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    margin-right: 15%;
+    font-size: 18px;
+}
+.navli:hover {font-size: 22px;}
+
+/*--------------------- About 페이지 ----------------------*/
+.about{
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.about-title{
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+/*-------------봉사 신청 패이지-------------*/
+
+/*지역 선택*/
+#localchoice{
+    position: fixed;
+    margin-top: 200px;
+    width: 350px;
+    height: 100px;
+}
+#localchoice h2{
+    margin-bottom: 3px;
+}
+#localchoice .pupple_line{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color:#A879F3;
+}
+#localchoice>div{
+    position: relative;
+    margin-top: 15px;
+    max-width: 350px;
+    height: 30px;
+    padding: 0 50px;
+
+}
+#localchoice h4{
+    position: absolute;
+    margin: 0;
+}
+#localchoice>div button{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 6px;
+    right: 50px;
+    border-top: 7px solid black;
+    border-bottom: 0 solid;
+    border-left: 6px solid white;
+    border-right: 6px solid white;
+}
+
+.volunteerlist{
+    position: relative;
+    right: 20px;
+    top: 30px;
+}
+
+.volunteerlist ul{
+    width: auto;
+    position: absolute;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 5rem;    
+}
+
+.volunteerlist li{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #8252D0;
+    border-radius: 25px;
+    right: 0;
+    padding: 8%;
+    /* align-self: start; */
+}
+
+.locallist{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.gray{
+    /* top: 5px; */
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+/*-----------------나의 화분 페이지-----------------*/
+.diary{
+    margin-top: 40px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 600px;
+    height: 343px;
+    text-align: center;
+    align-self: center;
+}
+.diary *{
+    margin-bottom: 15px;
+}
+.treeimg{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    /* background-color: gray; */
+    margin: 20px auto;
+}
+.treeimg img{
+    height: 100%;
+}
+.diary h1{
+
+    /* margin-bottom: 10px; */
+}
+.shoping{
+    position: relative;
+    /* left: -100%; */
+    /* right: -100%; */
+    height: 25px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.diary .line{
+    width: 600px;
+    height: 5px;
+    background: linear-gradient(90deg, #8252D0 22.76%, #8252D0 33.18%, #8252D0 33.18%, rgba(90, 228, 228, 0.778125) 53.96%, #43BF48 73.28%);
+    margin-bottom: 20px;
+}
+
+.diarytext{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.diarytext input{
+    width: 560px;
+    height: 30px;
+    border-radius: 1000px;
+    opacity: 75%;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.diary button{
+    margin: 0 auto;
+    width: 110px;
+    height: 40px;
+    background-color: #A879F3;
+    border-radius: 20px;
+    border-style: none;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.mypotlist{
+    position: relative;
+    right: 20px;
+    top: 30px;
+}
+
+.mypotlist ul{
+    width: auto;
+    position: absolute;
+    right: 0;
+    display: grid;
+    gap: 2rem; 
+}
+
+.mypotlist li{
+    width: 730px;
+    height: auto;
+    border: 1px solid #8252D0;
+    border-radius: 25px;
+    right: 0;
+    padding: 4%;
+    /* align-self: start; */
+}
+
+/*-------------------쇼핑하기 페이지-------------------*/
+#shoping{
+    position: static;
+}
+
+.nowfruit{
+    position: absolute;
+    top:20%;
+    left:12.5%;
+    font-size:30px;
+}
+.btnlookup{
+    position: absolute;
+    width:200px;
+    top:20%;
+    left:50%;
+}
+.offbtn{
+    position: absolute;
+    top:30%;
+    left:20%;
+    font-size:17px;
+    font-weight: bold;
+    width:15%;
+    height:7.5%;
+    border: 1px solid #A879F3;
+    /* background-color: white; */
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.onbtn{
+    position: absolute;
+    top:40%;
+    left:20%;
+    font-size:17px;
+    font-weight: bold;
+    width:15%;
+    height:7.5%;
+    /* background-color: #43BF48; */
+    border: 1px solid #43BF48;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.test{
+    position: absolute;
+    overflow:scroll;
+    width:40%;
+    height:70vh;
+    bottom:0%;
+    right:10%;
+    -ms-overflow-style: none;
+}
+.test::-webkit-scrollbar{ display:none; }
+.test > div{
+    position: relative;
+    width:100%;
+    height:30vh;
+}
+.productname{
+    font-size: 25px;
+    position: absolute;
+    top:40%;
+    left:45%;
+}
+.price{
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    top:35%;
+    left:75%;
+}
+
+.imgborder{
+    position: relative;
+    width:35%;
+    height:30vh;
+    border-radius: 30px;
+    border: 2px solid;
+    margin:2.5%;
+}
+
+.imgborder> img{
+    position: absolute;
+    top:5%;
+    left:5%;
+    width:90%;
+}
+
+/*-----------------랭킹 페이지-----------------*/
+/* .wrap{
+    text-align: center; 
+    margin: 0px auto;
+} */
+#empty{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30vh;
+}
+
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    margin: auto;
+}
+
+/*-------------------- 하단 기능 --------------------*/
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+}
+footer span{
+    left: 0;
+    bottom: 12vh;
+    width: 100vw;
+}
+footer ul{ 
+    text-align: center;
+    min-width: 400px;
+    /* margin-left: 75vw;
+    margin-right:25vw; */
+    margin-bottom: 50px;
+    font-size: 12px;
+}
