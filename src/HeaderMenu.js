@@ -65,13 +65,13 @@ class HeaderMenu extends React.Component {
             <ul className="navul">
               <Link to="/"><li className="navli">봉사신청</li></Link>
               <Link to="/나의화분"><li className="navli">나의 화분</li></Link>
-              <Link to="/랭킹"><li className="navli">랭킹</li></Link>       
+              <Link to="/랭킹"><li className="navli">랭킹</li></Link>
               <Link to="/웹정보"><li className="navli">웹 정보</li></Link>
 
               {this.state.text ?
-              (<a href="/"><li className="navli"><button type="button" id="mpbtn" className="navbtn" onClick={this.Logout}>로그아웃</button></li></a>)  // 로그인 또는 회원가입 했을 때
-              : (<Link to="/시작페이지"><li className="navli"><button type="button" id="mpbtn" className="navbtn">로그인</button></li></Link>)          // 로그아웃 했을 때
-                
+                (<a href="/"><li className="navli"><button type="button" id="mpbtn" className="navbtn" onClick={this.Logout}>로그아웃</button></li></a>)  // 로그인 또는 회원가입 했을 때
+                : (<Link to="/시작페이지"><li className="navli"><button type="button" id="mpbtn" className="navbtn">로그인</button></li></Link>)          // 로그아웃 했을 때
+
               }
             </ul>
           </div>
