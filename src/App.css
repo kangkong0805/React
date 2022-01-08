@@ -64,7 +64,7 @@ aside{
 
 .navul{
     height: 12.5vh;
-    display:grid;
+    display:grid;   
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     margin-right: 15%;

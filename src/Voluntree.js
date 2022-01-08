@@ -73,7 +73,7 @@ class Voluntree extends React.Component {
                 console.log("성공");
 
                 this.setState({
-                    volunteerList: data,
+                    volunteerList: data,    
                 });
                 console.log(data);
             })
